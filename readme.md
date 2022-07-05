@@ -11,3 +11,9 @@
 webpack
 webpack-cli 命令行工具
 webpack-dev-server webpack 开发服务器
+
+## typescript
+
+typescript
+ts-loader
+tsconfig-paths-webpack-plugin 将 tsconfig 中的 paths 配置同步到 webpack 中
