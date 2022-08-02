@@ -1,9 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, useRoutes } from "react-router-dom";
+import routes from "../config/routes";
 
-ReactDOM.render(
+const container = document.getElementById("root") as HTMLElement;
+const root = createRoot(container!);
+
+const App: React.FC = () => {
+  let element = useRoutes(routes);
+  return element;
+};
+
+root.render(
   <React.StrictMode>
-    <div>Bench</div>
-  </React.StrictMode>,
-  document.getElementById("root")
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );
