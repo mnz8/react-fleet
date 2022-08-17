@@ -7,6 +7,7 @@ import { osLocale } from 'os-locale';
 
 const msgPath = process.env.GIT_PARAMS || process.env.HUSKY_GIT_PARAMS;
 const msg = fs.readFileSync(msgPath, 'utf-8').trim();
+chalk.level = 3;
 
 const commitRE =
   /^(((\ud83c[\udf00-\udfff])|(\ud83d[\udc00-\ude4f\ude80-\udeff])|[\u2600-\u2B55]) )?(revert: )?(feat|fix|docs|UI|refactor|perf|workflow|build|CI|typos|chore|tests|types|wip|release|dep|locale)(\(.+\))?: .{1,50}/;
