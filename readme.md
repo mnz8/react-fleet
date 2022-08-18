@@ -8,15 +8,11 @@
 
 ## webpack
 
-webpack
-webpack-cli 命令行工具
-webpack-dev-server webpack 开发服务器
+webpack webpack-cli 命令行工具 webpack-dev-server webpack 开发服务器
 
 ## typescript
 
-typescript
-ts-loader
-tsconfig-paths-webpack-plugin 将 tsconfig 中的 paths 配置同步到 webpack 中
+typescript ts-loader tsconfig-paths-webpack-plugin 将 tsconfig 中的 paths 配置同步到 webpack 中
 
 ## html-webpack-plugin
 
@@ -25,20 +21,6 @@ tsconfig-paths-webpack-plugin 将 tsconfig 中的 paths 配置同步到 webpack 
 
 ## lint and formatter
 
-@typescript-eslint/eslint-plugin
-@typescript-eslint/parser
-eslint
-eslint-config-prettier
-eslint-formatter-pretty
-eslint-plugin-babel
-eslint-plugin-jest
-eslint-plugin-promise
-eslint-plugin-react
-eslint-plugin-react-hooks
-eslint-plugin-unicorn
-prettier
-husky
+@typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-formatter-pretty eslint-plugin-babel eslint-plugin-jest eslint-plugin-promise eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn prettier husky lint-staged
 
-- verifyCommit.mjs
-    chalk,os-locale
-    .mjs: ES module (chalk5.0.0 不支持在 nodejs 中 require() 导入)
+- verifyCommit.mjs chalk,os-locale .mjs: ES module (chalk5.0.0 不支持在 nodejs 中 require() 导入)
