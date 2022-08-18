@@ -1,9 +1,9 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import { BrowserRouter, useRoutes } from "react-router-dom";
-import routes from "../config/routes";
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, useRoutes } from 'react-router-dom';
+import routes from '../config/routes';
 
-const container = document.getElementById("root") as HTMLElement;
+const container = document.getElementById('root') as HTMLElement;
 const root = createRoot(container!);
 
 const App: React.FC = () => {
@@ -16,5 +16,5 @@ root.render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
