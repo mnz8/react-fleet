@@ -1,5 +1,5 @@
-import { Outlet } from "react-router-dom";
-import Sider from "@/components/Sider";
+import { Outlet } from 'react-router-dom';
+import Sider from '@/components/Sider';
 
 export default function Layout() {
   return (

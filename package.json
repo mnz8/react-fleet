@@ -8,7 +8,14 @@
     "start": "webpack serve --mode=development --config ./config/webpack.config.js",
     "build": "webpack --mode=production --config ./config/webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint:prettier": "prettier -c --write \"src/**/*\" --end-of-line auto",
+    "prettier": "prettier -c --write \"src/**/*\""
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -32,6 +39,7 @@
     "eslint-plugin-unicorn": "^43.0.2",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "os-locale": "^6.0.2",
     "prettier": "^2.7.1",
     "ts-loader": "^9.3.1",

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import routes from "@/../config/routes";
-import type { typeMyRoute } from "@/../config/routes";
+import { Link } from 'react-router-dom';
+import routes from '@/../config/routes';
+import type { typeMyRoute } from '@/../config/routes';
 
 export default function Sider() {
   const routesLi: any = [];
@@ -10,7 +10,7 @@ export default function Sider() {
         routesLi.push(
           <li key={ele.name}>
             <Link to={ele.path as string}>{ele.name}</Link>
-          </li>
+          </li>,
         );
       }
       if (ele?.children) {
@@ -20,5 +20,5 @@ export default function Sider() {
   }
   transMenu(routes);
 
-  return <ul style={{ width: "100%" }}>{routesLi}</ul>;
+  return <ul style={{ width: '100%' }}>{routesLi}</ul>;
 }
