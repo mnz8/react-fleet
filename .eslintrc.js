@@ -142,7 +142,6 @@ module.exports = {
         '@typescript-eslint/no-misused-promises': 0,
         '@typescript-eslint/no-namespace': 1,
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
-        '@typescript-eslint/no-parameter-properties': 'error',
         'no-redeclare': 'off',
         '@typescript-eslint/no-redeclare': 'error',
         '@typescript-eslint/no-require-imports': 0,
